@@ -1,5 +1,10 @@
 const repeatString = function(phrase, numRepetitions) {
+    if (numRepetitions < 0) {
+        return 'ERROR';
+    }
+    
     let result = "";
+
     for(let i = 0; i < numRepetitions; i++) {
         result += phrase;
     }
