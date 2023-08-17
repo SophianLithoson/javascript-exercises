@@ -13,8 +13,10 @@ function removeFromArray() {
         currentElement = args[i];
         currentIndex = inputArray.indexOf(currentElement);
         if (currentIndex > 0)
-            inputArray.slice(currentIndex, 1);
+            inputArray.splice(currentIndex, 1);
     }
+
+    return inputArray;
 };
 
 // Do not edit below this line
