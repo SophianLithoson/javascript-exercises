@@ -2,15 +2,12 @@ const sumAll = function(firstInt, lastInt) {
     if (firstInt===NaN || lastInt===NaN || firstInt < 0 || lastInt < 0)
         return 'ERROR';
 
-    if (firstInt > lastInt) {
-        let x = lastInt;
-        firstInt = lastInt;
-        lastInt = x;
-    }
-
-    let result = 0;
-
-    for (i = firstInt; i <= lastInt; i++)
+    let result;
+    let smallestInt = (firstInt < lastInt) ? firstInt : lastInt;
+    let largestInt = (firstInt < lastInt) ? lastInt : firstInt;
+    
+        
+    for (i = smallestInt; i <= largestInt; i++)
         result += i;
 
     return result;
