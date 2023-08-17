@@ -1,8 +1,8 @@
 const sumAll = function(firstInt, lastInt) {
-    if (firstInt===NaN || lastInt===NaN || firstInt < 0 || lastInt < 0)
+    if ((typeof firstInt) != "number" || (typeof lastInt) != "number" || firstInt < 0 || lastInt < 0) 
         return 'ERROR';
-
-    let result;
+    
+    let result = 0;
     let smallestInt = (firstInt < lastInt) ? firstInt : lastInt;
     let largestInt = (firstInt < lastInt) ? lastInt : firstInt;
     
