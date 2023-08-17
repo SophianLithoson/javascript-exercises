@@ -1,5 +1,5 @@
 const sumAll = function(firstInt, lastInt) {
-    if ((typeof firstInt) != "number" || (typeof lastInt) != "number" || firstInt < 0 || lastInt < 0) 
+    if (typeof firstInt != "number" || typeof lastInt != "number" || firstInt < 0 || lastInt < 0) 
         return 'ERROR';
     
     let result = 0;
