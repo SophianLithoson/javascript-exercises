@@ -12,7 +12,7 @@ function removeFromArray() {
     for (let i=0; i < args.length; ++i) {
         currentElement = args[i];
         currentIndex = inputArray.indexOf(currentElement);
-        if (currentIndex > 0)
+        if (currentIndex >= 0)
             inputArray.splice(currentIndex, 1);
     }
 
