@@ -8,7 +8,9 @@ const sumAll = function(firstInt, lastInt) {
         lastInt = x;
     }
 
-    for (i = firstInt; i < lastInt; i++)
+    let result = 0;
+
+    for (i = firstInt; i <= lastInt; i++)
         result += i;
 
     return result;
