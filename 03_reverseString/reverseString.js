@@ -3,8 +3,10 @@ const reverseString = function(phrase) {
     let backwardsPhrase = '';
 
     while(phraseAsArray.length) {
-        backwardsPhrase += phrase.pop();
+        backwardsPhrase += phraseAsArray.pop();
     }
+
+    return backwardsPhrase;
 };
 
 // Do not edit below this line
