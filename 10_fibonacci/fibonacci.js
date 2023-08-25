@@ -7,12 +7,12 @@ const fibonacci = function(num) {
 
     let stack = [0, 1];
 
-    for (i=1, i <= num, i++) {
-        stack.pop(stack[0] + stack [1]);
+    for (i=2; i <= num; i++) {
+        stack.push(stack[0] + stack [1]);
         stack.shift();
     }
 
-
+    return stack[1];
 };
 
 // Do not edit below this line
