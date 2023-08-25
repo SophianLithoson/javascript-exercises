@@ -3,6 +3,10 @@ const palindromes = function (text) {
     let textArray = Array.from(textNoPuncs.toUpperCase());
         
     for (let i=0, j=(textArray.length - 1); i <= j; i++, j--) {
+        while (textArray[i] === " ")
+            i++;
+        while (textArray[j] === " ")
+            j--;
         if (textArray[i] === textArray[j])
             continue;
         else
